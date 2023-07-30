@@ -4,7 +4,7 @@ pipeline {
 		
 		stage ("CI Project"){
 			steps {
-				sh 'mvn clean install'
+				bat 'mvn clean install'
 			}
 			post {
 				success {
